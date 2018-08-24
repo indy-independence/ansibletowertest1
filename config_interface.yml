@@ -1,0 +1,12 @@
+---
+- hosts: nip-xrv9k
+  ansible_connection: network_cli
+  ansible_network_os: ios_xr
+  tasks:
+          - name: configure interface settings
+            iosxr_config:
+                    lines:
+                            - ansibletowertest1
+                            - ip address 172.16.0.1 255.255.255.0
+                    parents: interface GigabitEthernet0/0/0/1
+
