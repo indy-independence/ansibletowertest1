@@ -1,7 +1,7 @@
 ---
 - hosts: nip-xrv9k
-  ansible_connection: network_cli
-  ansible_network_os: ios_xr
+  connection: network_cli
+  network_os: ios_xr
   tasks:
           - name: configure interface settings
             iosxr_config:
