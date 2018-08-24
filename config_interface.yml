@@ -1,7 +1,6 @@
 ---
-- hosts: nip-xrv9k
-  connection: network_cli
-  network_os: ios_xr
+- name: configure interface
+  hosts: nip-xrv9k
   tasks:
           - name: configure interface settings
             iosxr_config:
