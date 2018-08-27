@@ -9,14 +9,3 @@
                             - ip address 172.16.0.1 255.255.255.0
                             - no shutdown
                     parents: interface GigabitEthernet0/0/0/1
-
-- name: deconfigure interface
-  hosts: nip-xrv9k
-  tasks:
-          - name: deconfigure interface settings
-            iosxr_config:
-                    lines:
-                            - no description
-                            - no ip address
-                            - shutdown
-                    parents: interface GigabitEthernet0/0/0/1
