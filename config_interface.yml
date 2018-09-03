@@ -5,7 +5,7 @@
           - name: configure interface settings
             iosxr_config:
                     lines:
-                            - description ansibletowertest1, extra: {{ test }}
+                            - description ansibletowertest1, extra: "{{ test }}"
                             - ip address 172.16.0.1 255.255.255.0
                             - no shutdown
                     parents: interface GigabitEthernet0/0/0/1
