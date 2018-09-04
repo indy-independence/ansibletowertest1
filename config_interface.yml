@@ -6,6 +6,6 @@
             iosxr_config:
                     lines:
                             - description {{ description }}
-                            - ip address 172.16.0.1 255.255.255.0
+                            - ip address {{ ipaddress }}
                             - no shutdown
-                    parents: interface GigabitEthernet0/0/0/1
+                    parents: interface {{ interface }}
