@@ -8,4 +8,4 @@
                             - no description
                             - no ip address
                             - shutdown
-                    parents: interface GigabitEthernet0/0/0/1
+                    parents: interface {{ interface }}
